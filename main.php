@@ -14,7 +14,7 @@
     <title>L O G I C</title>
     <link rel="icon" href="images/alien.png">
     <link rel="stylesheet" href="styles.css" />
-  </head> <!-- TEST -->
+  </head> <!-- TESTING  -->
   <body>
     <div class="container">
       <div class="navBar">

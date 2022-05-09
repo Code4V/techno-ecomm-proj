@@ -1,1 +1,6 @@
-TESTING
+<?php   
+
+echo 'Testing';
+
+
+?>

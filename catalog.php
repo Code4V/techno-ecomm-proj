@@ -1,8 +1,4 @@
 <?php   
-
-echo 'Testing';
-
-
 ?>
 
 
@@ -18,11 +14,26 @@ echo 'Testing';
     
 </head>
 <body>
-    <p>BSIT 3 4</p>
-
-    <h1>Ervin bautista</h1>
-    <h1>Jeanne Francis Rivas</h1> 
-
+   
+<div class="main">
+    <div class="header-container">
+        <div class="header-top">checktop</div>
+        <div class="header-bottom">checkbot</div>
+    </div>
+    
+    <div class="flexbox-mainbody">
+        <div class="flexbox-item flex-categories">
+        flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
+        flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
+        flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
+        </div>
+        <div class="flexbox-item flex-main-catalog">
+        flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
+        flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
+        flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

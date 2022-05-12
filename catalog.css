@@ -1,0 +1,58 @@
+.header-container{
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1px;
+}
+
+.header-bottom .header-top{
+    
+    padding:0px;
+}
+
+.header-top{
+    background-color: red;
+}
+
+.header-bottom{
+    background-color: orange;
+    padding-top: 10px;
+}
+
+.flexbox-mainbody {
+    background-color: green;
+    width: 250;
+    height: 250vh;
+    max-width: 250;
+
+    display: flex;
+}
+
+.flexbox-item {
+
+    /* TO BE REMOVED */
+    border-style: solid;
+    border-color: black;
+
+    border-width: 1px;
+    
+}
+
+.flex-categories{
+    background-color: blue;
+    width: 30%;
+    
+
+    position: sticky;
+    
+}
+
+.flex-main-catalog{
+    background-color: gold;
+
+
+    margin-left: 10px;
+}
+

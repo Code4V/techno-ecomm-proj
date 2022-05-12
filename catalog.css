@@ -24,13 +24,18 @@
     padding-top: 10px;
 }
 
+.flexbox-mainbody-container {
+
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .flexbox-mainbody {
     background-color: green;
-    width: 250;
-    height: 250vh;
-    max-width: 250;
-
     display: flex;
+    justify-content: center;
 }
 
 .flexbox-item {
@@ -46,6 +51,7 @@
 .flex-categories{
     background-color: blue;
     width: 30%;
+    max-width: 250px;
     
 }
 
@@ -56,3 +62,32 @@
     margin-left: 10px;
 }
 
+.flex-products {
+    background-color: olivedrab;
+
+    flex-basis: 20%;
+    max-width: 125px;
+    min-width: 100px;
+
+    max-height: 200px;
+    width: 125px;
+    height: 200px;
+
+    box-sizing: border-box;
+}
+
+.flex-display-products {
+    background-color: purple;
+    padding: 1px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer-container {
+    background-color: chartreuse;
+    padding: 0;
+    bottom: 0;
+    height: 100px;
+}

@@ -41,6 +41,17 @@
                     <div class="flexbox-item flex-products"></div>
                     <div class="flexbox-item flex-products"></div>
                     <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
                 </div>
                 
             </div>

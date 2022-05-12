@@ -26,9 +26,11 @@
 
 .flexbox-mainbody-container {
 
-    width: 1200px;
+    width: 700px;
     margin-right: auto;
     margin-left: auto;
+
+    
 }
 
 
@@ -36,6 +38,8 @@
     background-color: green;
     display: flex;
     justify-content: center;
+
+    height: 100vh;
 }
 
 .flexbox-item {
@@ -80,8 +84,13 @@
     background-color: purple;
     padding: 1px;
 
+    max-width: 65;
+
     display: flex;
     flex-direction: row;
+
+    flex-wrap: wrap;
+    
 }
 
 

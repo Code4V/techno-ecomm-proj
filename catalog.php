@@ -4,6 +4,8 @@ echo 'Testing';
 
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +13,16 @@ echo 'Testing';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="catalog.css" />
+    
 </head>
 <body>
     <p>BSIT 3 4</p>
 
     <h1>Ervin bautista</h1>
-    <h1>Jeanne Francis Rivas</h1>
+    <h1>Jeanne Francis Rivas</h1> 
+
+
 </body>
 </html>

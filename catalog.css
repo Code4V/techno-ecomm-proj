@@ -4,7 +4,10 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 1px;
+    padding: 5px;
+
+    border-style: solid;
+    border-width: 1px;
 }
 
 .header-bottom .header-top{
@@ -44,15 +47,12 @@
     background-color: blue;
     width: 30%;
     
-
-    position: sticky;
-    
 }
 
 .flex-main-catalog{
     background-color: gold;
 
-
+    width: 65;
     margin-left: 10px;
 }
 

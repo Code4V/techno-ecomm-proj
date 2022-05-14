@@ -1,8 +1,4 @@
 <?php   
-
-echo 'Testing';
-
-
 ?>
 
 
@@ -18,11 +14,55 @@ echo 'Testing';
     
 </head>
 <body>
-    <p>BSIT 3 4</p>
+   
+<div class="main">
 
-    <h1>Ervin bautista</h1>
-    <h1>Jeanne Francis Rivas</h1> 
+    <!-- HEADER SECTION -->
+    <div class="header-container">
+        <div class="header-top">checktop</div>
+        <div class="header-bottom">checkbot</div>
+    </div>
+    
 
+    <!-- MAIN BODY SECTION -->
+    <div class="flexbox-mainbody-container">
+        <div class="flexbox-mainbody">
+            <div class="flexbox-item flex-categories">
+            flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
+            flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
+            flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
+            </div>
+            <div class="flexbox-item flex-main-catalog">
+            flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
+            flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
+            flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
+                <div class="flexbox-item flex-display-products">
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                    <div class="flexbox-item flex-products"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-content-conatiner">
+
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

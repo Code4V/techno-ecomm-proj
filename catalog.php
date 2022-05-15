@@ -28,9 +28,9 @@
     <div class="flexbox-mainbody-container">
         <div class="flexbox-mainbody">
             <div class="flexbox-item flex-categories">
-            flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
-            flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
-            flex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex categoryflex category
+                <div class="flexbox-item categories-title">
+                    <p>Categories</p>
+                </div>
             </div>
             <div class="flexbox-item flex-main-catalog">
             flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main

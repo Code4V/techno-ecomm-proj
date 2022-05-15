@@ -1,10 +1,15 @@
+body{ 
+    margin: 0;
+}
+
 .header-container{
     background-color: aqua;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    padding: 5px;
+    padding: 2px;
+    
 
     border-style: solid;
     border-width: 1px;
@@ -22,20 +27,24 @@
 .header-bottom{
     background-color: orange;
     padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    
 }
 
 .flexbox-mainbody-container {
 
     width: 700px;
+
     margin-right: auto;
     margin-left: auto;
 
-    
 }
 
 
 .flexbox-mainbody {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.164);
     display: flex;
     justify-content: center;
 
@@ -53,10 +62,18 @@
 }
 
 .flex-categories{
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.233);
     width: 30%;
-    max-width: 250px;
-    
+    max-width: 125px;
+    min-width: 125px;
+}
+
+.categories-title{
+    background-color: aqua;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .flex-main-catalog{

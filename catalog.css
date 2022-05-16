@@ -9,6 +9,8 @@ body{
     left: 0;
     right: 0;
     padding: 2px;
+    z-index: 1000;
+    
     
 
     border-style: solid;
@@ -36,6 +38,8 @@ body{
 .flexbox-mainbody-container {
 
     width: 700px;
+    z-index: 900;
+
 
     margin-right: auto;
     margin-left: auto;
@@ -116,4 +120,7 @@ body{
     padding: 0;
     bottom: 0;
     height: 100px;
+    z-index: 1001;
+
 }
+    

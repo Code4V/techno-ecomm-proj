@@ -59,12 +59,12 @@
                 ?>
                 <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['fullName']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td><?php echo $row['contact']; ?></td>
                     <td><?php echo $row['date']; ?></td>
                     <td><?php echo $row['descrip']; ?></td>
-                    <td><a href="del.php?a=<?php echo $row['name']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
+                    <td><a href="delAppoint.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
                 </tr>
 
 

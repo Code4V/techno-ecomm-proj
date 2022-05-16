@@ -55,7 +55,7 @@
                     <td><?php echo $row['pass']; ?></td>
                     <td><?php echo $row['contact']; ?></td>
                     <td><?php echo $row['addR']; ?></td>
-                    <td><a href="del.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
+                    <td><a href="delUsers.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
                 </tr>
 
 

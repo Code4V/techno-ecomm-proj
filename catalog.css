@@ -40,7 +40,7 @@ body{
     width: 700px;
     z-index: 900;
 
-
+    min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
 
@@ -52,7 +52,7 @@ body{
     display: flex;
     justify-content: center;
 
-    height: 100vh;
+    
 }
 
 .flexbox-item {
@@ -60,8 +60,11 @@ body{
     /* TO BE REMOVED */
     border-style: solid;
     border-color: black;
-
+    
+    padding: 0%;
     border-width: 1px;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -83,7 +86,7 @@ body{
 .flex-main-catalog{
     background-color: gold;
 
-    width: 65;
+    width: 80%;
     margin-left: 10px;
 }
 
@@ -105,6 +108,7 @@ body{
     background-color: purple;
     padding: 1px;
 
+    
     max-width: 65;
 
     display: flex;
@@ -116,6 +120,8 @@ body{
 
 
 .footer-container {
+    position: relative;
+
     background-color: chartreuse;
     padding: 0;
     bottom: 0;

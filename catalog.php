@@ -33,27 +33,11 @@
                 </div>
             </div>
             <div class="flexbox-item flex-main-catalog">
-            flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
-            flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
-            flex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex mainflex main
-                <div class="flexbox-item flex-display-products">
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                    <div class="flexbox-item flex-products"></div>
-                </div>
-                
+                <p>Results</p>
+                    <div class="flexbox-item flex-display-products">
+                        <div class="flexbox-item flex-products"></div>
+                        
+                    </div>
             </div>
         </div>
     </div>

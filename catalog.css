@@ -36,11 +36,11 @@ body{
 }
 
 .flexbox-mainbody-container {
-
     width: 700px;
     z-index: 900;
 
     min-height: 100vh;
+    
     margin-right: auto;
     margin-left: auto;
 

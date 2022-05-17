@@ -22,16 +22,20 @@
 <head>
     <title>Admin: Appointment</title>
     <link rel="icon" href="images/alien.png">
-    <link rel="stylesheet"  href="appointAdmin.css">
+    <link rel="stylesheet"  href="appointAdmin.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Radley&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <p>Appointment</p>
+<div class="btnClass">
+        <button class="btn">Admin: Appointment <i class="fa-solid fa-arrow-down"></i></button>  
+        <div class="btnContent">
+            <a href="usersAdmin.php"> Admin: Users </a>   
+        </div>
     </div>
+
     <div class="container">
         <table class="primaryTable">
             <thead>
@@ -55,12 +59,12 @@
                 ?>
                 <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['fullName']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td><?php echo $row['contact']; ?></td>
                     <td><?php echo $row['date']; ?></td>
                     <td><?php echo $row['descrip']; ?></td>
-                    <td><a href="del.php?a=<?php echo $row['name']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
+                    <td><a href="delAppoint.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
                 </tr>
 
 

@@ -16,7 +16,7 @@
   margin-left: auto;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 table {
   border: 1px solid black;
@@ -36,4 +36,48 @@ th {
 td {
   text-align: center;
   border: 1px solid black;
+}
+
+.btnClass {
+  width: 350px; /*adjusted width to fit appointment*/
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: white;
+  color: red;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f925; /*changed transparency*/
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.btnContent a {
+  color: black;
+  padding: 12px 106px; /*adjusted the dropdown size to fit .btnClass*/
+  text-decoration: none;
+  display: block;
+}
+
+.btnContent a:hover {
+  background-color: #f1f1f1;
+}
+
+.btnClass:hover .btnContent {
+  display: block;
+}
+
+.btnClass:hover .btn {
+  background-color: #f1f1f1;
 }

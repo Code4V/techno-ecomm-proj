@@ -9,17 +9,23 @@
     
     <title>Admin: Users</title>
     <link rel="icon" href="images/alien.png">
-    <link rel="stylesheet"  href="usersAdmin.css">
+    <link rel="stylesheet"  href="usersAdmin.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Radley&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-        <p>Users</p>
-        
+    <div class="btnClass">
+        <button class="btn">Admin: Users <i class="fa-solid fa-arrow-down"></i></button>  
+        <div class="btnContent">
+            <a href="appointAdmin.php"> Admin: Appointment </a>   
+        </div>
     </div>
+
+
+        
+    
     
     <div class="container">
         <table class="primaryTable">
@@ -49,7 +55,7 @@
                     <td><?php echo $row['pass']; ?></td>
                     <td><?php echo $row['contact']; ?></td>
                     <td><?php echo $row['addR']; ?></td>
-                    <td><a href="del.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
+                    <td><a href="delUsers.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
                 </tr>
 
 
@@ -57,8 +63,10 @@
 
             </tbody>
         </table>
-        
+       
         
     </div>
+    
+    
 </body>
 </html>

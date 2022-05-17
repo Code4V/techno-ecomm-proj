@@ -1,13 +1,25 @@
+body, head{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{ 
+    margin: 0;
+}
+
 .header-container{
     background-color: aqua;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    padding: 5px;
-
+    padding: 2px;
+    z-index: 1000;
+    
+    
+    /*
     border-style: solid;
     border-width: 1px;
+    */
 }
 
 .header-bottom .header-top{
@@ -21,82 +33,147 @@
 
 .header-bottom{
     background-color: orange;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+    
 }
 
 .flexbox-mainbody-container {
-
     width: 700px;
+    z-index: 900;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     margin-right: auto;
     margin-left: auto;
 
-    
 }
 
 
 .flexbox-mainbody {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.164);
     display: flex;
     justify-content: center;
 
-    height: 100vh;
+
+    
+    min-height: inherit;
 }
 
 .flexbox-item {
 
-    /* TO BE REMOVED */
+    /* TO BE REMOVED 
     border-style: solid;
     border-color: black;
+    */
 
+    padding: 0%;
     border-width: 1px;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.flex-categories{
-    background-color: blue;
+.flex-categories-title, .flex-main-catalog-title{
+    display: flex;
+    
+    min-height: 10px;
+}
+
+.flex-categories-container{
+    background-color: rgba(0, 0, 255, 0.233);
     width: 30%;
-    max-width: 250px;
-    
+    max-width: 125px;
+
 }
 
-.flex-main-catalog{
-    background-color: gold;
+.categories-title{
+    background-color: aqua;
+    padding: 0px;
 
-    width: 65;
+    
+    font-weight: bold;
+}
+
+.flex-main-catalog-container{
+    /* background-color: gold; */
+
+    width: 74.5%;
     margin-left: 10px;
 }
 
-.flex-products {
-    background-color: olivedrab;
+.flex-main-catalog-title{
+    background-color: rebeccapurple;
 
-    flex-basis: 20%;
-    max-width: 125px;
-    min-width: 100px;
-
-    max-height: 200px;
-    width: 125px;
-    height: 200px;
-
-    box-sizing: border-box;
+    padding: -10;
 }
 
 .flex-display-products {
-    background-color: purple;
-    padding: 1px;
-
-    max-width: 65;
+    /* background-color: purple; */
+    
+    max-width: inherit;
 
     display: flex;
-    flex-direction: row;
-
     flex-wrap: wrap;
+    flex-direction: row; 
+
+    margin: 0;
+    padding: 0;
+}
+
+.flex-products-container{
+    /* background-color: pink; */
     
+    padding: 2px;
+}
+
+.flex-products{
+    background-color: olivedrab;
+
+    
+   
+}
+
+.flex-products, .flex-products-container {
+    max-width: 100px;
+    min-width: 100px;
+
+    max-height: 200px;
+    height: 200px;
+
+}
+
+#product-image{
+    
+
+    max-width: 98%;
+    max-height: 98%;
+    
+    padding-left: 1px;
+    padding-top: 1px;
+    margin: 0;
+
+}
+
+.product-image-container{
+    position: relative;
+
+
 }
 
 
 .footer-container {
-    background-color: chartreuse;
+    position: relative;
+
+    background-color: rgba(128, 128, 128, 0.164);
     padding: 0;
     bottom: 0;
-    height: 100px;
+    height: 150px;
+    width: 100%;
+    z-index: 1001;
 }
+    

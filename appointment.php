@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
         echo "<script>alert('Please use another email.')</script>";
     }
     else{
-        $sql = "INSERT INTO appoint(name, email, contact, date, descrip ) VALUES('$name', '$email', '$contact', '$date', '$descrip')";
+        $sql = "INSERT INTO appoint(fullName, email, contact, date, descrip ) VALUES('$name', '$email', '$contact', '$date', '$descrip')";
     
         if(mysqli_query($conn, $sql)){
             echo "<script>alert('Appointment scheduled. Check your email for further instructions.')</script>";

@@ -33,22 +33,71 @@
                 </div>
             </div>
             <div class="flexbox-item flex-main-catalog-container">
-                    <div class="flexbox-item flex-main-catalog-title">
-                        <p>Results</p>
+                <div class="flexbox-item flex-main-catalog-title">
+                    <p>Results</p>
+                </div>
+                <div class="flexbox-item flex-display-products">
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="product-image-container">
+                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                        </div> 
                     </div>
-                    <div class="flexbox-item flex-display-products">
-                        <div class="flexbox-item flex-products"></div>
-                        
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="product-image-container">
+                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                        </div> 
                     </div>
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="product-image-container">
+                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="product-image-container">
+                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="product-image-container">
+                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="product-image-container">
+                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="product-image-container">
+                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    
+                </div>
             </div>
         </div>
     </div>
+
     <div class="footer-container">
         <div class="footer-content-conatiner">
 
         </div>
     </div>
-</div>
 
 </body>
 </html>

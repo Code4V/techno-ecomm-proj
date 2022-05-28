@@ -28,9 +28,25 @@ if(isset($_POST['submit'])){
             echo "An error occured.";
         }
     }
-    
+
+    $to_email = $email;
+    $subject = "Confirmation Email";
+    $body = "Hi  $name , This is a email to confirm that you scheduled an appointment in $date. If you have any concerns, email us at eimif007@gmail.com";
+    $headers = "From: ATOM team";
+ 
+    if (mail($to_email, $subject, $body, $headers)) {
+        echo "<script>alert('Email sent successfully!')</script>";
+    } else {
+        echo "<script>alert('Email sending failed!')</script>";
 
 }
+}
+
+  
+
+    
+
+
 
 
 

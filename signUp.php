@@ -13,6 +13,8 @@
 		$password = $_POST['password'];
         $contact = $_POST['contact'];
         $address = $_POST['address'];
+        $confCode = rand(100000, 999999);
+
 
 
 		$check = "SELECT email FROM users WHERE email = '$email'";
@@ -29,10 +31,10 @@
 			echo "<script>alert('Please use another email.')</script>";
 		}
 		else{
-			$sql = "INSERT INTO users(fullName, email, pass, contact, addR ) VALUES('$name', '$email', '$password', '$contact', '$address')";
-		
+			$sql = "INSERT INTO users(fullName, email, pass, contact, addR, code ) VALUES('$name', '$email', '$password', '$contact', '$address', '$confCode')";
+            $confCode = 0;
 			if(mysqli_query($conn, $sql)){
-                echo "<script>alert('Registered Successfully!')</script>";
+                header("location: otp.php?a=$email");
                 
 
 			
@@ -42,8 +44,9 @@
 			}
 		}
 		
-
+        
 	}
+    
 
 
 ?>

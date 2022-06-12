@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    $check = "SELECT email, pass FROM users WHERE email = '$email'";
+    $check = "SELECT email, pass FROM workers WHERE email = '$email'";
     $result = mysqli_query($conn, $check);
     
     while($row = mysqli_fetch_array($result)){
@@ -52,13 +52,13 @@ if(isset($_POST['submit'])){
 <html lang="en">
 <head>
     <link rel="icon" href="images/alien.png">
-    <link rel="stylesheet" href="workersLogin.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="creatorsLogin.css?v=<?php echo time(); ?>">
     <title>Login</title>
 </head>
 <body>
     <div class="container">
         <div class="formTitle">WORKERS: Login</div>
-            <form action="login.php" method="POST">
+            <form action="creatorsLogin.php" method="POST">
                 <div class="userDetails">
 
                     <div class="inputBox">

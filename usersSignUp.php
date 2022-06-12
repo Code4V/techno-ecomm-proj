@@ -31,13 +31,23 @@
 			echo "<script>alert('Please use another email.')</script>";
 		}
 		else{
-			$sql = "INSERT INTO users(fullName, email, pass, contact, addR, code ) VALUES('$name', '$email', '$password', '$contact', '$address', '$confCode')";
-            $confCode = 0;
-			if(mysqli_query($conn, $sql)){
-                header("location: otp.php?a=$email");
-                
+            
+            $to_email = $email;
+            $subject = "BuzzWork User: Verification Code";
+            $body = "Good day $name, this is the verification code for your account on BuzzWork: $confCode";
+            $headers = "From: BuzzWork Team";
+             
+            if (mail($to_email, $subject, $body, $headers)) {
+                echo "<script>alert('Email sent.')</script>";
+            } else {
+                echo "<script>alert('Email not sent.')</script>";
+            }
 
-			
+			$sql = "INSERT INTO users(fullName, email, pass, contact, address, code ) VALUES('$name', '$email', '$password', '$contact', '$address', '$confCode')";
+            
+            
+			if(mysqli_query($conn, $sql)){
+                header("location: otp.php?a= US + $name");
 			}
 			else{
 				echo "An error occured.";
@@ -99,7 +109,6 @@
                 <div class="button">
                     <input type="submit" value="Sign Up" name="submit">
                 </div>
-
                 <a href="login.php"><h4>Login</h4></a>
             </form>
             

@@ -13,23 +13,17 @@
 		$password = $_POST['password'];
         $contact = $_POST['contact'];
         $address = $_POST['address'];
+        $confCode = rand(100000, 999999);
 
         
         $data = $_POST['data'];
         $allData = implode(",", $data );
-    /*
-        echo gettype($name);
-        echo gettype($email);
-        echo gettype($password);
-        echo gettype($contact);
-        echo gettype($address);
-        echo gettype($allData);
         
-        */
+ 
 
 
 
-		$check = "SELECT email FROM users WHERE email = '$email'";
+		$check = "SELECT email FROM workers WHERE email = '$email'";
 		$result = mysqli_query($conn, $check);
 		
 		while($row = mysqli_fetch_array($result)){
@@ -43,24 +37,22 @@
 			echo "<script>alert('Please use another email.')</script>";
 		}
 		else{
-
-			$sql = "INSERT INTO workers (fullName, email, pass, contact, addR ) VALUES ('$name', '$email', '$password', '$contact', '$address')";
-            
-			if(mysqli_query($conn, $sql)){
-                $sql2 = "UPDATE workers SET jobDescrip = '$allData' WHERE email = $email";
-                if(mysqli_query($conn, $sql2))
-                {
-                    header("location:main.php");
-                }
-                else{
-                    echo "update error";
-                }
-
-                
-			}
-			else{
-				echo "An error occured.";
-			}
+            $to_email = $email;
+            $subject = "BuzzWork Creator: Verification Code";
+            $body = "Good day $name, this is the verification code for your account on BuzzWork: $confCode";
+            $headers = "From: BuzzWork Team";
+             
+            if (mail($to_email, $subject, $body, $headers)) {
+                echo "<script>alert('Email sent.')</script>";
+            } else {
+                echo "<script>alert('Email not sent.')</script>";
+            }
+			$sql = "INSERT INTO workers (fullName, email, pass, contact, addR, jobDescrip, code) VALUES ('$name', '$email', '$password', '$contact', '$address', '$allData', '$confCode')";
+            if(mysqli_query($conn, $sql))
+            {
+                header("location: otp.php?a= CT + $name");
+            }
+			
 		}
 		
         
@@ -78,12 +70,12 @@
     
     <title>Sign Up</title>
     <link rel="icon" href="images/alien.png">
-    <link rel="stylesheet" href="workersSignUp.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="creatorsSignUp.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <div class="container">
-        <div class="formTitle">WORKERS: Sign Up</div>
-            <form action="workersSignUp.php" method="POST">
+        <div class="formTitle">CREATORS: Sign Up</div>
+            <form action="creatorsSignUp.php" method="POST">
                 <div class="userDetails">
                     <div class="inputBox">
                         <span class="details">Name</span>
@@ -110,20 +102,29 @@
                         <input class="box" type="text" id="address" name="address" placeholder="Enter Address" required>
                     </div>
 
+                    <span class="details">Status: Student?</span>
                     <ul class="checkbox">
                         
-                            <li><input type="checkbox" name="data[]" value="Carpenter">  Carpenter</li>
-                            <li><input type="checkbox" name="data[]" value="Painter">  Painter</li>
-                            <li><input type="checkbox" name="data[]" value="Electrician">  Electrician</li>
-                            <li><input type="checkbox" name="data[]" value="Welder">  Welder</li>
-                            <li><input type="checkbox" name="data[]" value="Plumber">  Plumber</li>
-                            <li><input type="checkbox" name="data[]" value="Mason">  Mason</li>
-                            <li><input type="checkbox" name="data[]" value="Technician">  Technician</li>
-                            <li><input type="checkbox" name="data[]" value="Mechanic">  Mechanic</li>
-                            <li><input type="checkbox" name="data[]" value="Driver">  Driver</li>
-                            <li><input type="checkbox" name="data[]" value="Helper">  Helper</li>
+                            <li><input type="radio" name="status" value=1>  Yes</li>
+                            <li><input type="radio" name="status" value=0>  No</li>
+                    <ul>
+                        <br>
+                    
+                    <span class="details">Can do:</span>
+                    <ul class="checkbox">
+                        
+                            <li><input type="checkbox" name="data[]" value="Infographic">  Infographic</li>
+                            <li><input type="checkbox" name="data[]" value="Programmer">  Programming</li>
+                            <li><input type="checkbox" name="data[]" value="Photographer">  Photography</li>
+                            <li><input type="checkbox" name="data[]" value="Tutor">  Tutoring</li>
+                            <li><input type="checkbox" name="data[]" value="Game Pilot">  Game Pilot</li>
+                            <li><input type="checkbox" name="data[]" value="Editor">  Editor</li>
+                            <li><input type="checkbox" name="data[]" value="Digital Artist">  Digital Art</li>
+                          
                         
                     </ul>
+                <br>
+                    <p>*Note that you must present your school id and registration card of the present semester via email.</p>
                 <br>
             
                 
@@ -132,7 +133,6 @@
                 <div class="button">
                     <input class="box" type="submit" value="Sign Up" name="submit">
                 </div>
-
                 <a href="workersLogin.php"><h4>Login</h4></a>
             </form>
             

@@ -1,64 +1,63 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-.header {
-  text-align: center;
-  font-size: 30px;
-  height: 66px;
-  color: red;
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: hidden;
 }
 
-.container {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
+.menuTab {
+  max-width: 250px;
+}
+
+.menuTab ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  transition: 0.5s;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  transform: translateX(10px);
+  color: yellow;
+}
+
+.classWrapper {
+  width: calc(100%-250px);
+  height: 100vh;
   justify-content: center;
-  min-height: 80vh;
-}
-table {
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
-  border-collapse: collapse;
-  font-size: 18px;
-  z-index: 0; /*places table behind hover*/
 }
 
-th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #04aa6d;
-  color: white;
-}
-td {
-  text-align: center;
-  border: 1px solid black;
-}
-
-.headerContent {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/*Centered the Admin:Users ↓*/
 .btnClass {
-  width: 300px;
-  justify-content: center;
+  padding-left: 250px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .btn {
   background-color: white;
-  color: red;
+  color: black;
   padding: 16px;
   font-size: 25px;
   border: none;
@@ -81,14 +80,41 @@ td {
   display: block;
 }
 
-.btnContent a:hover {
-  background-color: #f1f1f1;
+.container {
+  max-width: calc(100% - 270px);
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  padding-left: 250px;
+}
+table {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  z-index: 0; /*places table behind hover*/
 }
 
-.btnClass:hover .btnContent {
-  display: block;
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: black;
+  color: yellow;
+}
+td {
+  text-align: center;
+  border: 1px solid black;
 }
 
-.btnClass:hover .btn {
-  background-color: #f1f1f1;
+.headerContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }

@@ -29,15 +29,15 @@ session_start();
 <body>
     <div class="menuTab">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Workers</a></li>
+            <li><a href="main.php">Home</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="usersAdmin.php">Users</a></li>
+            <li><a href="creatorsAdmin.php">Creators</a></li>
         </ul>
     </div>
     <div class="classWrapper">
         <div class="btnClass">
-            <button class="btn">Admin: Users </button>  
+            <button class="btn">Admin: Creators </button>  
         </div>
 
         <div class="container">
@@ -47,9 +47,9 @@ session_start();
                     <th>Id</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Password</th>
                     <th>Contact</th>
                     <th>Address</th>
+                    <th>Job Description</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -57,18 +57,18 @@ session_start();
                 <?php
                     require('dbconnect.php');
 
-                    $query1 = mysqli_query($conn, "select * from users");
+                    $query1 = mysqli_query($conn, "select * from workers");
                     while($row = mysqli_fetch_array($query1))
                     {
                 ?>
                 <tr>
-                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['workersId']; ?></td>
                     <td><?php echo $row['fullName']; ?></td>
                     <td><?php echo $row['email']; ?></td>
-                    <td><?php echo $row['pass']; ?></td>
                     <td><?php echo $row['contact']; ?></td>
-                    <td><?php echo $row['address']; ?></td>
-                    <td><a href="delUsers.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
+                    <td><?php echo $row['addR']; ?></td>
+                    <td><?php echo $row['jobDescrip']; ?></td>
+                    <td><a href="delCreators.php?a=<?php echo $row['fullName']; ?>"><i class='fa-solid fa-trash-can'></i></a></td>
                 </tr>
 
 

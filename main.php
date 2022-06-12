@@ -22,7 +22,18 @@
           <a href="#">About</a>
           <a href="creatorsCards.php">Creators</a>
           <a href="#">Posts</a>
-          <a href="usersSignUp.php">Account</a>
+          <div class="dropdown-menu">
+            <a href="usersSignUp.php">Account</a>
+                <div class="dropdown-list-container">
+                  <div class="dropdown-list-content">
+                    <a href="usersSignUp.php">Users</a>
+                    <a href="usersSignUp.php">Creator</a>
+                    <a href="usersSignUp.php">Admin</a>
+                  </div>
+                </div>
+          </div>
+          
+
         </div>
       </header>
       <div class="content">

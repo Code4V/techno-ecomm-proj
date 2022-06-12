@@ -39,7 +39,9 @@ header .logo {
   letter-spacing: 1px;
 }
 
+
 header .navigation a {
+  display: inline-block;
   color: #000;
   text-decoration: none;
   font-weight: 500;
@@ -277,6 +279,7 @@ label {
   cursor: pointer;
 }
 
+/*
 .dropDown {
   display: none;
   position: absolute;
@@ -290,3 +293,20 @@ label {
 .account:hover .dropDown {
   display: block;
 }
+*/
+.dropdown-menu{
+  display: inline-block;
+}
+
+.dropdown-list-container{
+  padding-top: calc(100% * .15rem);
+  padding-left: 20px;
+  position: absolute;
+  width: 100px;
+  display: none;
+}
+
+.dropdown-menu:hover .dropdown-list-container {
+  display: block;
+}
+

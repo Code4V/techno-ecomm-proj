@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BuzzWork</title>
+    <link rel="icon" href="images/bee.png">
     <link rel="stylesheet" href="mainStyle.css" />
     <link
       rel="stylesheet"
@@ -51,6 +52,7 @@
       <br />
 
       <div class="allCards">
+        <h1>Services Offered</h1>
         <div class="cards">
           <img src="images/programming.jpg" class="image" />
           <div class="title">

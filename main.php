@@ -19,8 +19,8 @@
         <div class="navigation">
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Info</a>
-          <a href="#">Services</a>
+          <a href="creatorsCards.php">Creators</a>
+          <a href="#">Posts</a>
           <a href="usersSignUp.php">Account</a>
         </div>
       </header>

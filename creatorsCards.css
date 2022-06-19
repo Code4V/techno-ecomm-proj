@@ -153,6 +153,7 @@ td {
 .cards .title {
   text-align: center;
   padding-bottom: 10px;
+  word-wrap: break-word;
 }
 
 .cardButton1 {

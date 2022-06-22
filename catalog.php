@@ -39,53 +39,21 @@
                 <div class="flexbox-item flex-display-products">
                     <div class="flexbox-item flex-products-container">
                         <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
+                            <div class="flexbox-item product-image-container">
                                     <img src="images\hpSpectre.jpg" id="product-image">
+                            </div>
+                            <div class="flexbox-item product-title-container">
+                                <p>Lorem Ipsum</p>
+                            </div>
+
+                            <div class="flexbox-item product-description-container">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut maiores sint deleniti laboriosam vitae error, ipsum, officiis quam rerum dolorum dicta at. Commodi nobis, vitae ullam veniam similique animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut maiores sint deleniti laboriosam vitae error, ipsum, officiis quam rerum dolorum dicta at. Commodi nobis, vitae ullam veniam similique animi. </p>
                             </div>
                         </div> 
                     </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
+
+                    
+
                     
                     
                 </div>

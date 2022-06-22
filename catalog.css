@@ -41,7 +41,7 @@ body{
 }
 
 .flexbox-mainbody-container {
-    width: 700px;
+    width: 600px;
     z-index: 900;
     
     display: flex;
@@ -109,12 +109,11 @@ body{
 .flex-main-catalog-title{
     background-color: rebeccapurple;
 
-    padding: -10;
+    padding: 10;
 }
 
 .flex-display-products {
     /* background-color: purple; */
-    
     max-width: inherit;
 
     display: flex;
@@ -127,35 +126,37 @@ body{
 
 .flex-products-container{
     /* background-color: pink; */
-    
+
     padding: 2px;
 }
 
 .flex-products{
-    background-color: olivedrab;
+    border-style: solid;
+    border-width: 1px;
+    background-color: hsl(56, 100%, 50%);
 
-    
-   
 }
 
 .flex-products, .flex-products-container {
-    max-width: 100px;
-    min-width: 100px;
-
-    max-height: 200px;
     height: 200px;
+    min-width: 100%;
 
+    border-radius: 10px;
+    
 }
 
 #product-image{
     
+    border-style: solid;
+    border-width: 1px;
 
-    max-width: 98%;
-    max-height: 98%;
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
     
-    padding-left: 1px;
-    padding-top: 1px;
-    margin: 0;
+
+    padding: 0px;
+    margin: 5px;
 
 }
 

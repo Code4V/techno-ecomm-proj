@@ -39,17 +39,34 @@
                 <div class="flexbox-item flex-display-products">
                     <div class="flexbox-item flex-products-container">
                         <div class="flexbox-item flex-products">
-                            <div class="flexbox-item product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
+                            <div class="flexbox-item product-header">
+                                <div class="flexbox-item product-image-container">
+                                        <img src="images\hpSpectre.jpg" class="product-image">
+                                </div>
+                                <div class="flexbox-item product-title-container">
+                                    <p>Name of the Poster</p>
+                                </div>
+                                <div class="flexbox-item product-bbutt-container">
+                                    <p>Icon</p>
+                                </div>
                             </div>
-                            <div class="flexbox-item product-title-container">
-                                <p>Lorem Ipsum</p>
+                            <div class="flexbox-item product-description">
+                                <div class="flexbox-item product-description-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
                             </div>
+                            <div class="flexbox-item product-footer">
+                                <div class="flexbox-item product-price-container">
+                                    <p>100 Pesos</p>
+                                </div>
 
-                            <div class="flexbox-item product-description-container">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut maiores sint deleniti laboriosam vitae error, ipsum, officiis quam rerum dolorum dicta at. Commodi nobis, vitae ullam veniam similique animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut maiores sint deleniti laboriosam vitae error, ipsum, officiis quam rerum dolorum dicta at. Commodi nobis, vitae ullam veniam similique animi. </p>
+                                <div class="flexbox-item product-butt-container">
+                                    <button class="button contact-button">Contact</button>
+                                </div>
                             </div>
                         </div> 
+                        
+                       
                     </div>
 
                     

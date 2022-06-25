@@ -1,3 +1,9 @@
+* {
+    /* box-sizing: border-box;
+    outline: 1px solid limegreen !important;
+    */
+}
+
 body, head{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,17 +33,18 @@ body{
     padding:0px;
 }
 
+.header-bottom, .header-top{
+    text-align: center;
+}
+
 .header-top{
-    background-color: red;
+    background-color: hsl(56, 100%, 50%);
 }
 
 .header-bottom{
-    background-color: orange;
+    background-color: hsl(56, 100%, 50%);
     padding-top: 20px;
-    padding-bottom: 20px;
-
-    text-align: center;
-    
+    padding-bottom: 20px; 
 }
 
 .flexbox-mainbody-container {
@@ -130,29 +137,63 @@ body{
     padding: 2px;
 }
 
+
 .flex-products{
+    position: relative;
+
     border-style: solid;
     border-width: 1px;
     background-color: hsl(56, 100%, 50%);
 
+    margin-top: 10px;
+}
+
+.product-header{
+    flex-direction: row;
+
+    height: 20%;
+}
+
+.product-description{
+    height: 300px;
 }
 
 .flex-products, .flex-products-container {
     height: 200px;
     min-width: 100%;
 
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 10px;
     
 }
 
-#product-image{
+.product-title-container{
+    width: max-content;
+} 
+
+.product-bbutt-container, .product-butt-container{
+    position: absolute;
+    display: flex;
+
+    
+    right: 3px;
+}
+
+.product-title-container p::after{
+    content: "Date and Time Posted";
+    display:block;
+    position: absolute;
+    align-items: center;
+    font-size:xx-small;
+}
+
+.product-image{
     
     border-style: solid;
     border-width: 1px;
 
     border-radius: 50%;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 35px;
+    max-height: 35px;
     
 
     padding: 0px;
@@ -162,8 +203,20 @@ body{
 
 .product-image-container{
     position: relative;
+}
 
+.product-footer{
+    flex-direction: row;
+}
 
+.button{
+    background-color: #008877;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+
+    margin-top: 11px;
 }
 
 

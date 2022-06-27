@@ -11,6 +11,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 </head>
 <body>
@@ -18,10 +19,7 @@
 <div class="main">
 
     <!-- HEADER SECTION -->
-    <div class="header-container">
-        <div class="header-top">checktop</div>
-        <div class="header-bottom">checkbot</div>
-    </div>
+    
     
 
     <!-- MAIN BODY SECTION -->
@@ -29,12 +27,43 @@
         <div class="flexbox-mainbody">
             <div class="flexbox-item flex-categories-container">
                 <div class="flexbox-item categories-title">
-                    <p>Categories</p>
+                    <a href="#">Profile</a>
+                    <a href="#">Home</a>
+                    <a href="#">Posts</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
             <div class="flexbox-item flex-main-catalog-container">
-                <div class="flexbox-item flex-main-catalog-title">
-                    <p>Results</p>
+                <div class="flexbox-item flex-display-products">
+                    <div class="flexbox-item flex-products-container">
+                        <div class="flexbox-item flex-products">
+                            <div class="flexbox-item product-header">
+                                <div class="flexbox-item product-image-container">
+                                        <img src="images\hpSpectre.jpg" class="product-image">
+                                </div>
+                                <div class="flexbox-item product-title-container">
+                                    <p>Name of the Poster</p>
+                                </div>
+                                <div class="flexbox-item product-bbutt-container">
+                                    <p>Icon</p>
+                                </div>
+                            </div>
+                            <div class="flexbox-item product-description">
+                                <div class="flexbox-item product-description-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="flexbox-item product-footer">
+                                <div class="flexbox-item product-price-container">
+                                    <p>100 Pesos</p>
+                                </div>
+
+                                <div class="flexbox-item product-butt-container">
+                                    <button class="button contact-button">Contact</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
                 <div class="flexbox-item flex-display-products">
                     <div class="flexbox-item flex-products-container">
@@ -74,6 +103,9 @@
                     
                     
                 </div>
+
+                
+                
             </div>
         </div>
     </div>

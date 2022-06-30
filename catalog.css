@@ -1,170 +1,151 @@
+/* TABLE OF CONTENTS 
+
+0 ALL
+1 MAINBODY
+2 SIDE NAVIGATION
+    2.1 SIDE NAV ICON
+    2.2 SIDE NAV LISTS
+    2.3 NAV SEPERATOR 
+3 MAIN POSTS 
+4 FOOTER 
+
+*/
+
+
+
+/* 0 ALL  */
+
+* {
+    /* box-sizing: border-box;
+    outline: 1px solid limegreen !important; */
+    
+}
+
 body, head{
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(236, 252, 9, 0.158);
 }
 
 body{ 
     margin: 0;
 }
 
-.header-container{
-    background-color: aqua;
-    position: sticky;
+/* 1 MAINBODY */
+
+.mainbody-container{
+    /* min-height: 100vh; */
+}
+
+.mainbody{
+    display: grid;
+    grid-template-columns: minmax(165px, 15%) 1fr;
+    min-height: 100vh;
+}
+
+/* 2 SIDE NAVIGATION */
+
+.side-nav{
+    background-color: black;
+
+    position: relative;
+}
+
+/* 2.1 SIDE NAV ICON */
+
+.side-nav-icon{
+    margin: 10px 0px;
+
+}
+
+.icon{
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.icon:hover{
+    transition: 1.25s ease;
+    filter: brightness(75%) sepia(100) saturate(15) hue-rotate(365deg);
+}
+
+
+
+/* 2.2 SIDE NAV LISTS */
+
+.side-nav-lists{
+    display: grid;
+    box-sizing: border-box;
+
     top: 0;
-    left: 0;
-    right: 0;
-    padding: 2px;
-    z-index: 1000;
-    
-    
-    /*
-    border-style: solid;
-    border-width: 1px;
-    */
+    position:sticky;
 }
 
-.header-bottom .header-top{
+.side-nav-lists a {
+    color: white;
+    font-size: 1.25em;
+
+    margin-left: 10px;
+
+    top: 0;
+    bottom: 0;
+}
+
+.list-style:hover, a:hover{
+    color: yellow;
+    filter: brightness(100%) sepia(100) saturate(20) hue-rotate(365deg);
+    transition: 1.5s ease;
+}
+
+.list-style{
+    text-align: justify;
     
-    padding:0px;
 }
 
-.header-top{
-    background-color: red;
+.side-nav-lists a:hover {
+    color: yellow;
+    text-decoration: none;
 }
 
-.header-bottom{
-    background-color: orange;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.side-nav-lists img{
+
+    max-width: 20px;
+    max-height: 20px;
+
+    margin: 0px 0px 10px 22.5px;
+    text-align: center;
+}
+
+/* 2.3 NAV SEPERATOR */
+
+.nav-divider{
+    background-color: white;
+
+    height: 1.25px;
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     text-align: center;
+}
+
+/* 3 MAIN POSTS */
+
+.main-posts{
     
 }
 
-.flexbox-mainbody-container {
-    width: 700px;
-    z-index: 900;
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-
-.flexbox-mainbody {
-    background-color: rgba(0, 128, 0, 0.164);
-    display: flex;
-    justify-content: center;
-
-
-    
-    min-height: inherit;
-}
-
-.flexbox-item {
-
-    /* TO BE REMOVED 
-    border-style: solid;
-    border-color: black;
-    */
-
-    padding: 0%;
-    border-width: 1px;
-    display: flex;
-    flex-direction: column;
+.posts-container{
     
 }
 
-.flex-categories-title, .flex-main-catalog-title{
-    display: flex;
-    
-    min-height: 10px;
-}
-
-.flex-categories-container{
-    background-color: rgba(0, 0, 255, 0.233);
-    width: 30%;
-    max-width: 125px;
-
-}
-
-.categories-title{
-    background-color: aqua;
-    padding: 0px;
-
-    
-    font-weight: bold;
-}
-
-.flex-main-catalog-container{
-    /* background-color: gold; */
-
-    width: 74.5%;
-    margin-left: 10px;
-}
-
-.flex-main-catalog-title{
-    background-color: rebeccapurple;
-
-    padding: -10;
-}
-
-.flex-display-products {
-    /* background-color: purple; */
-    
-    max-width: inherit;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; 
-
-    margin: 0;
-    padding: 0;
-}
-
-.flex-products-container{
-    /* background-color: pink; */
-    
-    padding: 2px;
-}
-
-.flex-products{
-    background-color: olivedrab;
-
-    
-   
-}
-
-.flex-products, .flex-products-container {
-    max-width: 100px;
-    min-width: 100px;
-
-    max-height: 200px;
-    height: 200px;
-
-}
-
-#product-image{
-    
-
-    max-width: 98%;
-    max-height: 98%;
-    
-    padding-left: 1px;
-    padding-top: 1px;
-    margin: 0;
-
-}
-
-.product-image-container{
-    position: relative;
-
-
-}
-
+/* 4 FOOTER */
 
 .footer-container {
     position: relative;

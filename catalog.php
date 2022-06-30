@@ -11,6 +11,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 </head>
 <body>
@@ -18,78 +19,45 @@
 <div class="main">
 
     <!-- HEADER SECTION -->
-    <div class="header-container">
-        <div class="header-top">checktop</div>
-        <div class="header-bottom">checkbot</div>
-    </div>
+    
     
 
     <!-- MAIN BODY SECTION -->
-    <div class="flexbox-mainbody-container">
-        <div class="flexbox-mainbody">
-            <div class="flexbox-item flex-categories-container">
-                <div class="flexbox-item categories-title">
-                    <p>Categories</p>
+    <div class="mainbody-container">
+        <div class="mainbody">
+            <!-- SIDE NAVIGATION -->
+            <div class="side-nav">
+                <div class="side-nav-icon">
+                    <img src="images/bee_icon.png" class="icon" alt="buzzwork_icon">
+                </div>
+
+                <div class="list-style nav-divider"></div>
+
+                <div class="side-nav-lists">
+                    
+                    <div class="list-style nav-home">
+                        <img src="images/home-3-512.png"><a href="#">Home</a></img> 
+                    </div>
+                    <div class="list-style nav-creators">
+                        <img src="images/user-4-512.png"><a href="#">Creators</a></img> 
+                    </div>
+                    <div class="list-style nav-create-post">
+                        <img src="images/beeswax-2-512.png"><a href="#">Create Post</a></img> 
+                    </div>
+                    <div class="list-style nav-account">
+                        <img src="images/home-3-512.png"><a href="#">Account</a></img> 
+                    </div>
+                </div>       
+            <!-- MAIN LISTING  -->
+            </div>
+            <div class="main-posts">
+                <div class="main-listing-posts">
+                    <div class="posts-container">
+                        testing
+                    </div>
                 </div>
             </div>
-            <div class="flexbox-item flex-main-catalog-container">
-                <div class="flexbox-item flex-main-catalog-title">
-                    <p>Results</p>
-                </div>
-                <div class="flexbox-item flex-display-products">
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="product-image-container">
-                                    <img src="images\hpSpectre.jpg" id="product-image">
-                            </div>
-                        </div> 
-                    </div>
-                    
-                    
-                </div>
-            </div>
+
         </div>
     </div>
 

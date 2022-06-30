@@ -12,237 +12,76 @@ body{
     margin: 0;
 }
 
-.header-container{
-    /* background-color: aqua; */
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    /* padding: 2px; */
-    z-index: 1000;
-    
+/* 1 MAINBODY */
 
-    
-    /*
-    border-style: solid;
-    border-width: 1px;
-    */
-}
-
-.header-bottom .header-top{
-    
-    padding:0px;
-}
-
-.header-bottom, .header-top{
-    text-align: center;
-}
-
-.header-top{
-    background-color: black;
-}
-
-.header-bottom{
-    background-color: rgba(236, 252, 9, 0.158);
-    padding-top: 20px;
-    padding-bottom: 20px; 
-
-    
-    backdrop-filter: blur(3px);
-}
-
-.flexbox-mainbody-container {
-    /* width: 600px; */
-    z-index: 900;
-    
-    display: flex;
-    flex-direction: column;
+.mainbody-container{
     min-height: 100vh;
-
-    margin-right: auto;
-    margin-left: auto;
-
 }
 
-
-.flexbox-mainbody {
-    background-color: rgba(236, 252, 9, 0.158);
-    display: flex;
-    /* justify-content: center; */
-
-
-    
+.mainbody{
+    display: grid;
+    grid-template-columns: minmax(150px, 15%) 1fr;
     min-height: inherit;
 }
 
-.flexbox-item {
+/* 2 SIDE NAVIGATION */
 
-    /* TO BE REMOVED 
-    border-style: solid;
-    border-color: black;
-    */
-
-    padding: 0%;
-    border-width: 1px;
-
-
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.flex-categories-title, .flex-main-catalog-title{
-    display: flex;
-    
-    min-height: 10px;
-}
-
-.flex-categories-container{
-    background-color: rgb(0, 0, 0);
-    width: 13.235%;
-
-}
-
-.categories-title{
+.side-nav{
     background-color: black;
-    padding: 0px;
-
-    
-    font-weight: bold;
 }
 
-.categories-title a{
-    color: white;
+/* 2.1 SIDE NAV ICON */
 
+.side-nav-icon{
+    margin: 10px 0px;
+    position: relative;
+    
+    
+}
+
+.icon{
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.icon:hover{
+    transition: 1.25s ease;
+    filter: brightness(75%) sepia(100) saturate(15) hue-rotate(365deg);
+}
+
+
+
+/* 2.2 SIDE NAV LISTS */
+
+.side-nav-lists{
+    display: grid;
+    
+    
+}
+
+.side-nav-lists a {
+    color: white;
+}
+
+.side-nav-lists a:hover {
+    color: yellow;
+    transition: 0.5s ease;
+    filter: brightness(100%) sepia(100) saturate(20) hue-rotate(365deg);
     text-decoration: none;
 }
 
-.flex-main-catalog-container{
-    /* background-color: gold; */
+/* 3 MAIN POSTS */
 
-    width: 86.765%;
-    margin-left: 10px;
-}
-
-.flex-main-catalog-title{
-    /* background-color: rebeccapurple; */
-
-    padding: 10;
-}
-
-.flex-display-products {
-    /* background-color: purple; */
-    max-width: 500px;
-
-    display: grid;
-    grid-column: auto;
-    
-    margin: 10px 0px;
-    padding: 0;
-}
-
-.flex-products-container{
-    /* background-color: pink; */
-    
-    padding: 2px;
-}
-
-
-.flex-products{
-    position: relative;
-
-
-    background-color: hsl(56, 100%, 50%);
-
-    box-shadow: 1px 1px 1px 1px hsla(69, 96%, 27%, 0.288);
-    margin-top: 10px;
-}
-
-.product-header{
-    flex-direction: row;
-
-    height: 20%;
-}
-
-.product-description{
-    height: 300px;
-    padding: 0px 5px;
-}
-
-.flex-products, .flex-products-container {
-    height: 200px;
-    min-width: 100%;
-
-    border-radius: 10px 10px 10px 10px;
+.main-posts{
     
 }
 
-.product-title-container{
-    width: max-content;
-} 
-
-.product-bbutt-container, .product-butt-container{
-    position: absolute;
-    display: flex;
-
-    
-    right: 3px;
-}
-
-.product-title-container p::after{
-    content: "Date and Time Posted";
-    display:block;
-    position: absolute;
-    align-items: center;
-    font-size:xx-small;
-}
-
-.product-image{
-    
-    border-style: solid;
-    border-width: 1px;
-
-    border-radius: 50%;
-    max-width: 35px;
-    max-height: 35px;
-    
-
-    padding: 0px;
-    margin: 5px;
-
-}
-
-.product-image-container{
-    position: relative;
-}
-
-.product-price-container{
-    padding: 0px 5px;
-}
-
-.product-price-container p{
-    font-weight: bold;
-}
-
-.product-footer{
-    flex-direction: row;
-}
-
-.button{
-    background-color: #008877;
-    color: white;
-    font-size: 20px;
-    border: 0;
-    border-radius: 10px;
-
-   
-    box-shadow: 1px 1px 1px 1px hsla(69, 96%, 27%, 0.288);
-}
-
-.button:hover{
-    background-color: #09bea9;
-}
-
+/* 4 FOOTER */
 
 .footer-container {
     position: relative;

@@ -23,89 +23,22 @@
     
 
     <!-- MAIN BODY SECTION -->
-    <div class="flexbox-mainbody-container">
-        <div class="flexbox-mainbody">
-            <div class="flexbox-item flex-categories-container">
-                <div class="flexbox-item categories-title">
-                    <a href="#">Profile</a>
+    <div class="mainbody-container">
+        <div class="mainbody">
+            <div class="side-nav">
+                <div class="side-nav-icon">
+                    <img src="images/bee_icon.png" class="icon" alt="buzzwork_icon">
+                    <!-- <div class="icon-overlay"></div> -->
+                </div>
+                <div class="side-nav-lists">
                     <a href="#">Home</a>
-                    <a href="#">Posts</a>
-                    <a href="#">Profile</a>
+                    <a href="#">Creators</a>
+                    <a href="#">Create Post</a>
+                    <a href="#">Account</a>
                 </div>
             </div>
-            <div class="flexbox-item flex-main-catalog-container">
-                <div class="flexbox-item flex-display-products">
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="flexbox-item product-header">
-                                <div class="flexbox-item product-image-container">
-                                        <img src="images\hpSpectre.jpg" class="product-image">
-                                </div>
-                                <div class="flexbox-item product-title-container">
-                                    <p>Name of the Poster</p>
-                                </div>
-                                <div class="flexbox-item product-bbutt-container">
-                                    <p>Icon</p>
-                                </div>
-                            </div>
-                            <div class="flexbox-item product-description">
-                                <div class="flexbox-item product-description-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                            <div class="flexbox-item product-footer">
-                                <div class="flexbox-item product-price-container">
-                                    <p>100 Pesos</p>
-                                </div>
-
-                                <div class="flexbox-item product-butt-container">
-                                    <button class="button contact-button">Contact</button>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="flexbox-item flex-display-products">
-                    <div class="flexbox-item flex-products-container">
-                        <div class="flexbox-item flex-products">
-                            <div class="flexbox-item product-header">
-                                <div class="flexbox-item product-image-container">
-                                        <img src="images\hpSpectre.jpg" class="product-image">
-                                </div>
-                                <div class="flexbox-item product-title-container">
-                                    <p>Name of the Poster</p>
-                                </div>
-                                <div class="flexbox-item product-bbutt-container">
-                                    <p>Icon</p>
-                                </div>
-                            </div>
-                            <div class="flexbox-item product-description">
-                                <div class="flexbox-item product-description-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                            <div class="flexbox-item product-footer">
-                                <div class="flexbox-item product-price-container">
-                                    <p>100 Pesos</p>
-                                </div>
-
-                                <div class="flexbox-item product-butt-container">
-                                    <button class="button contact-button">Contact</button>
-                                </div>
-                            </div>
-                        </div> 
-                        
-                       
-                    </div>
-
-                    
-
-                    
-                    
-                </div>
-
-                
-                
+            <div class="main-posts">
+                POSTS
             </div>
         </div>
     </div>

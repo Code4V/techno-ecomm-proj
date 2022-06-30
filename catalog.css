@@ -87,7 +87,7 @@ body{
     color: white;
     font-size: 1.25em;
 
-    margin-left: 10px;
+
 
     top: 0;
     bottom: 0;
@@ -96,7 +96,7 @@ body{
 .list-style:hover, a:hover{
     color: yellow;
     filter: brightness(100%) sepia(100) saturate(20) hue-rotate(365deg);
-    transition: 1.5s ease;
+    transition: 0.5s ease;
 }
 
 .list-style{
@@ -114,7 +114,7 @@ body{
     max-width: 20px;
     max-height: 20px;
 
-    margin: 0px 0px 10px 22.5px;
+    margin: 0px 10px 7.5px 15px;
     text-align: center;
 }
 
@@ -142,7 +142,63 @@ body{
 }
 
 .posts-container{
+    background-color: yellow;
+    position: relative;
+
+    max-height: 250px;
+    max-width: 525px;
+
+    margin: 10px 0px 0px 10px;
     
+
+    flex-direction: column;
+    
+    border-radius: 5px;
+}
+
+.flex-item{
+    display: flex;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    
+}
+
+/* 3.1 MAIN POSTS CONTENT */
+
+.worker-pfp{
+    max-width: 25px;
+    max-height: 25px;
+
+    margin: 10px 0px 0px 10px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-color: rgb(255, 0, 0);
+
+    border-radius: 25px;
+}
+
+.posts-header p{
+    margin: 10px 0 0 5px;
+}
+
+.posts-content{
+    z-index: 1;
+}
+
+.posts-highlight img{
+    z-index: 0;
+    position: absolute;
+
+    top: 0;
+    
+    right: 0;
+    bottom: 0;
+
+    max-height: 100%;
+    max-width: 50%;
 }
 
 /* 4 FOOTER */

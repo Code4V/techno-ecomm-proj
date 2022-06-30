@@ -25,21 +25,39 @@
     <!-- MAIN BODY SECTION -->
     <div class="mainbody-container">
         <div class="mainbody">
+            <!-- SIDE NAVIGATION -->
             <div class="side-nav">
                 <div class="side-nav-icon">
                     <img src="images/bee_icon.png" class="icon" alt="buzzwork_icon">
-                    <!-- <div class="icon-overlay"></div> -->
                 </div>
+
+                <div class="list-style nav-divider"></div>
+
                 <div class="side-nav-lists">
-                    <a href="#">Home</a>
-                    <a href="#">Creators</a>
-                    <a href="#">Create Post</a>
-                    <a href="#">Account</a>
-                </div>
+                    
+                    <div class="list-style nav-home">
+                        <img src="images/home-3-512.png"><a href="#">Home</a></img> 
+                    </div>
+                    <div class="list-style nav-creators">
+                        <img src="images/user-4-512.png"><a href="#">Creators</a></img> 
+                    </div>
+                    <div class="list-style nav-create-post">
+                        <img src="images/beeswax-2-512.png"><a href="#">Create Post</a></img> 
+                    </div>
+                    <div class="list-style nav-account">
+                        <img src="images/home-3-512.png"><a href="#">Account</a></img> 
+                    </div>
+                </div>       
+            <!-- MAIN LISTING  -->
             </div>
             <div class="main-posts">
-                POSTS
+                <div class="main-listing-posts">
+                    <div class="posts-container">
+                        testing
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 

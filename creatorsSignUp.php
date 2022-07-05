@@ -133,7 +133,7 @@
                 <div class="button">
                     <input class="box" type="submit" value="Sign Up" name="submit">
                 </div>
-                <a href="workersLogin.php"><h4>Login</h4></a>
+                <a href="creatorsLogin.php"><h4>Login</h4></a>
             </form>
             
         </div>

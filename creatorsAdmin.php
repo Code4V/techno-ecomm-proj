@@ -29,8 +29,8 @@ session_start();
 <body>
     <div class="menuTab">
         <ul>
-            <li><a href="main.php">Home</a></li>
-            <li><a href="#">Posts</a></li>
+            <li><a href="mainAdmin.php">Home</a></li>
+            <li><a href="catalog.php">Posts</a></li>
             <li><a href="usersAdmin.php">Users</a></li>
             <li><a href="creatorsAdmin.php">Creators</a></li>
         </ul>

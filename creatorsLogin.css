@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4070f4;
+  background: #fff;
 }
 .container {
   position: relative;
@@ -21,8 +21,8 @@ body {
   border-radius: 6px;
   padding: 30px;
   margin: 0 15px;
-  background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffe992;
+  box-shadow: 2px 5px 10px grey;
 }
 .container header {
   position: relative;
@@ -34,8 +34,8 @@ body {
   position: relative;
   margin-left: 20px;
   margin-top: 16px;
-  min-height: 200px;
-  background-color: #fff;
+  min-height: 250px;
+  background-color: #ffe992;
   overflow: hidden;
 }
 form .userDetails .inputBox {
@@ -45,8 +45,25 @@ form .userDetails .inputBox {
   font-size: larger;
   font-weight: bolder;
 }
+
+span {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
 input {
   padding-left: 10px;
+  font-size: 17px;
   height: 40px;
   width: 400px;
+  background-color: #ffe992;
+  color: black;
+}
+.button1 {
+  background-color: black;
+  color: white;
+}
+.button1:hover {
+  background-color: #333;
+  cursor: pointer;
 }

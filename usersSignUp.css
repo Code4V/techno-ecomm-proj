@@ -47,6 +47,7 @@ form .userDetails .inputBox {
 }
 input {
   padding-left: 10px;
+  font-size: 17px;
   height: 40px;
   width: 400px;
 }
@@ -55,6 +56,10 @@ select {
   all: revert;
   padding: 10px;
   width: 100px;
+}
+span {
+  font-weight: bold;
+  padding-top: 20px;
 }
 
 h4 {

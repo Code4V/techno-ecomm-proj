@@ -2,13 +2,41 @@
 include('dbconnect.php');
 session_start();
 
+if(isset($_POST['submit']))
+{
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-    if(isset($_POST['submit']))
-    {
-        $data = $_POST['data'];
-        $allData = implode(",", $data );
-        echo $allData;
+
+    $to_email = $email;
+    $subject = "BuzzWork: New Message!";
+    $body = "$message";
+    $headers = "From: BuzzWork User";
+     
+    if (mail($to_email, $subject, $body, $headers)) {
+        echo "<script>alert('Email sent.')</script>";
+
+        $sql = "INSERT INTO messages (email, message) VALUES ('$email', '$message')";
+        
+        if(mysqli_query($conn, $sql)){
+            header("location: main.php");
+        }
+        else{
+            echo "An error occured.";
+        }
+    
+
+    } else {
+        echo "<script>alert('Email not sent.')</script>";
     }
+
+   
+
+
+
+
+
+}
 
 
 
@@ -56,7 +84,7 @@ session_start();
                             <p><?php echo $row['email']; ?></td></p>
                             <p><?php echo $row['jobDescrip']; ?></td></p>
                         </div>
-                            <button class="cardButton1">Learn More</button>
+                            <button class="cardButton1" onclick="openForm()">Message Me!</button>
                     </div>
                 
                    
@@ -64,7 +92,44 @@ session_start();
 
 
                 <?php } ?>
+        <div class="form-popup" id="myForm">
+            <form action="creatorsCards.php" method="POST" class="form-container">
+                <h1>Message</h1>
+                <p>*copy the email of the creator first</p>
 
+                <div class="inputBox">
+                        <span class="details">Email</span>
+                        <input type="text" id="email" name="email" placeholder="Enter Email" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span class="details">Message</span>
+                        <textarea id="message" name="message" rows="4" cols="38"> </textarea>
+                    </div>
+                    <br>
+                    <div class="button">
+                        <input type="submit" value="Send" name="submit" class="sendButton">
+                    </div>
+                    <br>
+                
+                    <button class="closeButton" onclick="closeForm()">Close</button>
+
+            </form>
+        </div>
+        
+
+       
+        
+
+<script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+</script>                
           
        
         

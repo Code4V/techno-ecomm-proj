@@ -56,81 +56,48 @@
                 <div class="flex-item main-listing-posts">
                     <div class="flex-item posts-container">
                         <div class="flex-item posts-header">
-                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
-                            <p>Jeanne Francis Rivas</p>
+                            <img src="images/2_444.jpg" alt="worker-picture" class="worker-pfp">
+                            <p>Andy Medina</p>
+                            <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
                         </div>
                         <div class="flex-item posts-content">
-                            <p>Lorem ipsum dolor sit amet consecteture fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo.
+                            <p>I will pilot your league of legends account! Price varies depending on how many levels
+                                I should do. I also offer piloting your DOTA 2 account and Mobile Legends account
                             </p>
+                            
                         </div>
                         <div class="flex-item posts-footer">
-                            <p>Lorem </p>
+                            <p>₱500 - ₱1000</p>
+                            <button class="button contact-button">Order Service</button>
                         </div>
                         <div class="flex-item posts-highlight">
-                            <img src="images/programming.jpg" class="highlight-pic">
+                            <img src="images/Prev3.jpg" class="highlight-pic">
                         </div>
                     </div>
                     <div class="flex-item posts-container">
                         <div class="flex-item posts-header">
-                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
-                            <p>Jeanne Francis Rivas</p>
+                            <img src="images/2_444.jpg" alt="worker-picture" class="worker-pfp">
+                            <p>Ervin Bautista</p>
+                            <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
                         </div>
                         <div class="flex-item posts-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
+                            <p>I will edit your video with the utmost quality and flavor. You can add your touch in the video that will be edited
+                                Contact me now to make your ideas to reality! 
+                            </p>
+                            
                         </div>
                         <div class="flex-item posts-footer">
-                            <p>Lorem </p>
+                            <p>₱750 - ₱1500</p>
+                            <button class="button contact-button">Order Service</button>
                         </div>
                         <div class="flex-item posts-highlight">
-                            <img src="images/programming.jpg" class="highlight-pic">
+                            <img src="images/Prev1.jpg" class="highlight-pic">
+                            <img src="images/Prev2.jpg" class="highlight-pic">
                         </div>
                     </div>
-                    <div class="flex-item posts-container">
-                        <div class="flex-item posts-header">
-                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
-                            <p>Jeanne Francis Rivas</p>
-                        </div>
-                        <div class="flex-item posts-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
-                        </div>
-                        <div class="flex-item posts-footer">
-                            <p>Lorem </p>
-                        </div>
-                        <div class="flex-item posts-highlight">
-                            <img src="images/programming.jpg" class="highlight-pic">
-                        </div>
-                    </div>
-                    <div class="flex-item posts-container">
-                        <div class="flex-item posts-header">
-                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
-                            <p>Jeanne Francis Rivas</p>
-                        </div>
-                        <div class="flex-item posts-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
-                        </div>
-                        <div class="flex-item posts-footer">
-                            <p>Lorem </p>
-                        </div>
-                        <div class="flex-item posts-highlight">
-                            <img src="images/programming.jpg" class="highlight-pic">
-                        </div>
-                    </div>
-
-                    <div class="flex-item posts-container">
-                        <div class="flex-item posts-header">
-                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
-                            <p>Jeanne Francis Rivas</p>
-                        </div>
-                        <div class="flex-item posts-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
-                        </div>
-                        <div class="flex-item posts-footer">
-                            <p>Lorem </p>
-                        </div>
-                        <div class="flex-item posts-highlight">
-                            <img src="images/programming.jpg" class="highlight-pic">
-                        </div>
-                    </div>
+                    
+                    
+                    
                    
                     
                 </div>

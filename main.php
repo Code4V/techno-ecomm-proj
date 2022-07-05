@@ -19,7 +19,7 @@
         <img src="images/buzz2.png" width="200px" />
         <div class="navigation">
           <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="about.php">About</a>
           <a href="creatorsCards.php">Creators</a>
           <a href="#">Posts</a>
           <div class="dropdown-menu">
@@ -27,8 +27,8 @@
                 <div class="dropdown-list-container">
                   <div class="dropdown-list-content">
                     <a href="usersSignUp.php">Users</a>
-                    <a href="usersSignUp.php">Creator</a>
-                    <a href="usersSignUp.php">Admin</a>
+                    <a href="creatorsSignUp.php">Creator</a>
+                    <a href="adminLogin.php">Admin</a>
                   </div>
                 </div>
           </div>
@@ -69,7 +69,7 @@
           <div class="title">
             <h1>Programming</h1>
           </div>
-          <button class="cardButton1">Learn More</button>
+          <a class="cardButton1" href="skillCard.php?a=<?php echo "Programmer"; ?>">Learn More</a>
         </div>
 
         <div class="cards">
@@ -77,7 +77,7 @@
           <div class="title">
             <h1>Photography</h1>
           </div>
-          <button class="cardButton1">Learn More</button>
+          <a class="cardButton1" href="skillCard.php?a=<?php echo "Photographer"; ?>">Learn More</a>
         </div>
 
         <div class="cards">
@@ -85,14 +85,14 @@
           <div class="title">
             <h1>Digital Arts</h1>
           </div>
-          <button class="cardButton1">Learn More</button>
+          <a class="cardButton1" href="skillCard.php?a=<?php echo "Digital Art"; ?>">Learn More</a>
         </div>
         <div class="cards">
-          <img src="images/tutor.jpg" class="image" />
+          <img src="images/gaming.jpg" class="image" />
           <div class="title">
-            <h1>Tutors</h1>
+            <h1>Game Pilot</h1>
           </div>
-          <button class="cardButton1">Learn More</button>
+          <a class="cardButton1" href="skillCard.php?a=<?php echo "Game Pilot"; ?>">Learn More</a>
         </div>
       </div>
       <br />

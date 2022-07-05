@@ -60,7 +60,53 @@
                             <p>Jeanne Francis Rivas</p>
                         </div>
                         <div class="flex-item posts-content">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem perferendis eaque soluta ducimus deleniti porro praesentium qui explicabo ratione possimus, rerum mollitia officia, hic ullam illum atque molestias facere unde.</p>
+                            <p>Lorem ipsum dolor sit amet consecteture fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo.
+                            </p>
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>Lorem </p>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/programming.jpg" class="highlight-pic">
+                        </div>
+                    </div>
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
+                            <p>Jeanne Francis Rivas</p>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>Lorem </p>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/programming.jpg" class="highlight-pic">
+                        </div>
+                    </div>
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
+                            <p>Jeanne Francis Rivas</p>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>Lorem </p>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/programming.jpg" class="highlight-pic">
+                        </div>
+                    </div>
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
+                            <p>Jeanne Francis Rivas</p>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
                         </div>
                         <div class="flex-item posts-footer">
                             <p>Lorem </p>
@@ -70,8 +116,22 @@
                         </div>
                     </div>
 
-                    
-                    
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/user-4-512.png" alt="worker-picture" class="worker-pfp">
+                            <p>Jeanne Francis Rivas</p>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas cumque fugit dolore tempore. Facilis iste in assumenda iusto praesentium, excepturi aliquam rerum voluptas debitis veniam, natus, et explicabo nemo. </p>
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>Lorem </p>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/programming.jpg" class="highlight-pic">
+                        </div>
+                    </div>
+                   
                     
                 </div>
             </div>

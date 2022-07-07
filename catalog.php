@@ -15,14 +15,13 @@
     <link rel="stylesheet" href="catalog.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    
 </head>
 <body>
    
 <div class="main">
 
     <!-- HEADER SECTION -->
-    
-    
 
     <!-- MAIN BODY SECTION -->
     <div class="mainbody-container">
@@ -41,10 +40,10 @@
                         <a href="main.php" target="_blank"><img src="images/home-3-512.png" >Home</a></img> 
                     </div>
                     <div class="list-style nav-creators">
-                        <a href="#"><img src="images/user-4-512.png">Creators</a></img> 
+                        <a href="#"><img src="images/user-4-512.png">My Account</a></img> 
                     </div>
                     <div class="list-style nav-create-post">
-                        <a href="#"><img src="images/beeswax-2-512.png">Create Post</a></img> 
+                        <a href="#" onclick="toggleForm()"><img src="images/beeswax-2-512.png">Create Post</a></img> 
                     </div>
                     <div class="list-style nav-account">
                         <a href="#"><img src="images/home-3-512.png">Account</a></img> 
@@ -56,7 +55,7 @@
                 <div class="flex-item main-listing-posts">
                     <div class="flex-item posts-container">
                         <div class="flex-item posts-header">
-                            <img src="images/2_444.jpg" alt="worker-picture" class="worker-pfp">
+                            <img src="images/Prof1.png" alt="worker-picture" class="worker-pfp">
                             <p>Andy Medina</p>
                             <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
                         </div>
@@ -76,7 +75,7 @@
                     </div>
                     <div class="flex-item posts-container">
                         <div class="flex-item posts-header">
-                            <img src="images/2_444.jpg" alt="worker-picture" class="worker-pfp">
+                            <img src="images/Prof2.jpg" alt="worker-picture" class="worker-pfp">
                             <p>Ervin Bautista</p>
                             <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
                         </div>
@@ -95,22 +94,68 @@
                             <img src="images/Prev2.jpg" class="highlight-pic">
                         </div>
                     </div>
-                    
-                    
-                    
-                   
-                    
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/Prof2.jpg" alt="worker-picture" class="worker-pfp">
+                            <p>Ervin Bautista</p>
+                            <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>I’ll provide you with the best video editing solution and turn your raw footage into an engaging video that will tell your story. I can do video editing for YouTube, FB, IG, or whatever you want. You Name It, I Do It!
+                            </p>
+                            
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>₱750 - ₱1500</p>
+                            <button class="button contact-button">Order Service</button>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/Prev4.jpg" class="highlight-pic">
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <div class="footer-container">
+<!-- CREATE POST OVERLAY -->
+    <script>
+        function toggleForm(){
+        document.body.classList.toggle('activeForm');
+        }
+
+    </script>
+    <div class="overlay-form">
+        <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <h1>Create a Post! 🐝</h1>
+            <p>Start making money now and share your talents!</p>
+        <div class="form-element">
+            <label for="fullname">Category</label>
+            <input type="text" id="fullname">
+        </div>
+        <div class="form-element">
+            <label for="email">Description</label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-element">
+            <label for="password-1">Min Price</label>
+            <input type="password" id="password-1">
+        </div>
+        <div class="form-element">
+            <label for="password-2">Max Price</label>
+            <input type="password" id="password-2">
+        </div>
+        <div class="form-element">
+            <button>POST!</button>
+        </div>
+        </div>
+
+
+    <!-- <div class="footer-container">
         <div class="footer-content-conatiner">
 
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>

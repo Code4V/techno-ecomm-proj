@@ -193,7 +193,7 @@ body{
 .flex-item{
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
+    
 
     align-content: stretch;
     box-sizing: border-box; 
@@ -319,6 +319,8 @@ body{
 
 .posts-footer p{
     font-size: 1.5em;
+
+    color: yellow;
 }
 
 .posts-footer button{ 
@@ -353,6 +355,10 @@ body{
     transform: scale(1.0275);
 }
 
+.button:focus{
+    outline: none;
+    box-shadow: none;
+}
 /* 3.1.4 MAIN POSTS CONTENT HIGHLIGHT  */
 
 .posts-highlight{
@@ -378,9 +384,93 @@ body{
     border-radius: 10px;
     
     /* transform: translateX(-30px); */
+
+    transition: .25s ease;
 }
 
-/* 4 FOOTER */
+.posts-highlight img:hover{
+    transform: scale(.95);
+}
+
+/* 4 OVERLAY CREATE POST */
+
+.overlay-form {
+    position:absolute;
+    top:50vh;
+    left:0px;
+    min-width:100px;
+    height:0vh;
+    background:rgba(0,0,0,0.8);
+    z-index:-1;
+    opacity:0;
+    padding:80px 100px;
+    overflow:hidden;
+    box-sizing:border-box;
+    transition: top 500ms ease-in-out,
+                opacity 500ms ease-in-out,
+                height 0ms ease-in-out 500ms;  
+  }
+  .overlay-form .close-btn {
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:#fff;
+    font-size:40px;
+    font-weight:600;
+    cursor:pointer;
+  }
+  .overlay-form h1 {
+    font-size:32px;
+    color:#fff;
+  }
+  .overlay-form p {
+    font-size:16px;
+    color:#eee;
+    margin:-15px 0px 30px;
+  }
+  .overlay-form .form-element {
+    margin:20px 0px;
+  }
+  .overlay-form label {
+    display:block;
+    font-size:17px;
+    color:#eee;
+    margin-bottom:5px;
+  }
+  .overlay-form input {
+    width:100%;
+    padding:6px;
+    font-size:17px;
+    border:2px solid #eee;
+    background:transparent;
+    outline:none;
+    border-radius:10px;
+  }
+  .overlay-form button,
+  .center button {
+    margin-top:10px;
+    width:100px;
+    height:35px;
+    font-size:15px;
+    text-transform:uppercase;
+    background:#fff;
+    color:#222;
+    border:none;
+    outline:none;
+    border-radius:10px;
+  }
+
+  body.activeForm .overlay-form {
+    z-index:2;
+    opacity:1;
+    top:0px;
+    height:100vh;
+    transition: top 500ms ease-in-out,
+                opacity 500ms ease-in-out,
+                height 0ms ease-in-out 0ms;
+  }  
+
+/* 5 FOOTER */
 
 .footer-container {
     position: relative;

@@ -55,6 +55,25 @@
                 <div class="flex-item main-listing-posts">
                     <div class="flex-item posts-container">
                         <div class="flex-item posts-header">
+                            <img src="images/Prof2.jpg" alt="worker-picture" class="worker-pfp">
+                            <p>Ervin Bautista</p>
+                            <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>I will edit and retouch your photos in a cheap price!
+                            </p>
+                            
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>₱500 - ₱750</p>
+                            <button class="button contact-button">Order Service</button>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            
+                        </div>
+                    </div>
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
                             <img src="images/Prof1.png" alt="worker-picture" class="worker-pfp">
                             <p>Andy Medina</p>
                             <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
@@ -135,18 +154,18 @@
         </div>
         <div class="form-element">
             <label for="email">Description</label>
-            <textarea class="elem-desc" type="email" id="email"></textarea>
+            <input type="email" id="email">
         </div>
         <div class="form-element">
-            <label for="minprice">Min Price</label>
-            <input type="price" id="minprice">
+            <label for="password-1">Min Price</label>
+            <input type="password" id="password-1">
         </div>
         <div class="form-element">
-            <label for="maxprice">Max Price</label>
-            <input type="price" id="maxprice">
+            <label for="password-2">Max Price</label>
+            <input type="password" id="password-2">
         </div>
         <div class="form-element">
-            <a href="catalogUP.php"><button>POST!</button></a>
+            <button>POST!</button>
         </div>
         </div>
 

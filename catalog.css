@@ -442,7 +442,7 @@ body{
     color:#eee;
     margin-bottom:5px;
   }
-  .overlay-form input {
+  .overlay-form input, textarea{
     width:100%;
     padding:6px;
     font-size:17px;
@@ -450,7 +450,9 @@ body{
     background:transparent;
     outline:none;
     border-radius:10px;
+    color: white;
   }
+
   .overlay-form button,
   .center button {
     margin-top:10px;
@@ -474,6 +476,11 @@ body{
                 opacity 500ms ease-in-out,
                 height 0ms ease-in-out 0ms;
   }  
+
+.elem-desc{
+    min-height: 350px;
+    text-align: justify;
+}
 
 /* 5 FOOTER */
 

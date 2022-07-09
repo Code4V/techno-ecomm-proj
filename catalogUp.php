@@ -52,6 +52,11 @@
             <!-- MAIN LISTING  -->
             </div>
             <div class="main-posts">
+                <div class="main-title-container">
+                    <div>
+                        <h1>HOME</h1>
+                    </div>
+                </div>
                 <div class="flex-item main-listing-posts">
                     <div class="flex-item posts-container">
                         <div class="flex-item posts-header">

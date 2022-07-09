@@ -211,6 +211,49 @@ body{
     color: black;
 }
 
+.dashboard-container{
+    flex-direction: row;
+
+    margin: 0px 0px 0px 15px;
+    
+}
+
+.db-container{
+    height: 150px;
+    width: 275px;
+
+    flex-direction: column;
+
+    background-color: yellow;
+    color: black;
+
+    padding: 5px;
+    margin: 0px 0px 0px 10px;
+    border: 1.5px solid;
+    border-color: yellow;
+    border-radius: 10px;
+
+    transition: .25s ease;
+}
+
+.db-container:hover{
+    border-color: black;
+
+    transform: scale(1.025);
+}
+
+.db-container p{
+    font-size: 100px;
+    font-weight: bolder;
+
+    margin-left: auto;
+    
+}
+
+.db-nposts-number p{
+    
+}
+
 /* 3.1 MAIN POSTS CONTENT */
 
 /* 3.1.1 MAIN POSTS CONTENT HEADER  */

@@ -229,7 +229,7 @@ body{
 
     padding: 5px;
     margin: 0px 0px 0px 10px;
-    border: 1.5px solid;
+    border: 2.5px solid;
     border-color: yellow;
     border-radius: 10px;
 
@@ -243,10 +243,11 @@ body{
 }
 
 .db-container p{
-    font-size: 100px;
+    font-size: 75px;
     font-weight: bolder;
 
     margin-left: auto;
+    margin-top: auto;
     
 }
 

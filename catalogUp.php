@@ -159,18 +159,18 @@
         </div>
         <div class="form-element">
             <label for="email">Description</label>
-            <input type="email" id="email">
+            <textarea class="elem-desc" type="email" id="email"></textarea>
         </div>
         <div class="form-element">
-            <label for="password-1">Min Price</label>
-            <input type="password" id="password-1">
+            <label for="minprice">Min Price</label>
+            <input type="price" id="minprice">
         </div>
         <div class="form-element">
-            <label for="password-2">Max Price</label>
-            <input type="password" id="password-2">
+            <label for="maxprice">Max Price</label>
+            <input type="price" id="maxprice">
         </div>
         <div class="form-element">
-            <button>POST!</button>
+            <a href="catalogUP.php"><button>POST!</button></a>
         </div>
         </div>
 

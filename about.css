@@ -56,6 +56,22 @@ span {
   font-family: vogueFont;
   font-size: 400%;
 }
+.abtBuzzWork {
+  margin: 0;
+  background-image: url("images/working.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abtBuzzWork p {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px !important;
+  padding-top: 300px;
+  text-align: center !important;
+  align-items: justify !important;
+  padding-bottom: 200px;
+}
 
 /* Cards */
 .cards {
@@ -64,6 +80,7 @@ span {
   align-items: center;
   margin: 10px;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 .card-img {
   border-radius: 5px;

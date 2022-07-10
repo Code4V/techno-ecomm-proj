@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="about.css?v=<?php echo time(); ?>" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,6 +19,14 @@
         <input type="checkbox" onclick="myFunction()" />
         <span class="check"></span>
       </label>
+    </div>
+    <div class="abtBuzzWork">
+      
+      <h1 id="title">About BuzzWork</h1>
+      <p id="descript">Our company BuzzWork is an e-service electronic repair website<br>
+       that mainly offers services relating to Multimedia. 
+       Offering quality services that each customer needs. <br>
+       Ensuring that all partners within our service business provide top level service.<br> BuzzWork is created for the needs of trusted student freelancers on the internet. <br>Together we can create a platform to help these bright students profit from their passion.</p>
     </div>
     <div class="title">
       <h1 id="title">Developers Info</h1>

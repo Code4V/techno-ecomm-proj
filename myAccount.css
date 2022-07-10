@@ -150,6 +150,11 @@ body{
     justify-content: center;
 }
 
+.active{
+    text-decoration: underline;
+    
+}
+
 /* 3 MAIN POSTS */
 
 .main-posts{
@@ -232,6 +237,8 @@ body{
     border: 2.5px solid;
     border-color: yellow;
     border-radius: 10px;
+
+    box-shadow: 2px 2px gray;
 
     transition: .25s ease;
 }

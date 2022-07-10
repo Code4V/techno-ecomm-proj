@@ -36,17 +36,17 @@
 
                 <div class="side-nav-lists">
                     
-                    <div class="list-style nav-home">
+                    <div class="list-style nav-home ">
                         <a href="main.php" target="_blank"><img src="images/home-3-512.png" >Home</a></img> 
                     </div>
+                    <div class="list-style nav-account active">
+                        <a href="#"><img src="images/home-3-512.png">Posts</a></img> 
+                    </div>
                     <div class="list-style nav-creators">
-                        <a href="#"><img src="images/user-4-512.png">My Account</a></img> 
+                        <a href="myAccount.php"><img src="images/user-4-512.png">My Account</a></img> 
                     </div>
                     <div class="list-style nav-create-post">
                         <a href="#" onclick="toggleForm()"><img src="images/beeswax-2-512.png">Create Post</a></img> 
-                    </div>
-                    <div class="list-style nav-account">
-                        <a href="#"><img src="images/home-3-512.png">Account</a></img> 
                     </div>
                 </div>       
             <!-- MAIN LISTING  -->
@@ -54,7 +54,7 @@
             <div class="main-posts">
                 <div class="main-title-container">
                     <div>
-                        <h1>HOME</h1>
+                        <h1>POSTS</h1>
                     </div>
                 </div>
                 <div class="flex-item main-listing-posts">

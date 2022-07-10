@@ -132,6 +132,11 @@ body{
     text-align: center;
 }
 
+.active{
+    text-decoration: underline;
+    
+}
+
 /* 2.3 NAV SEPERATOR */
 
 .nav-divider{

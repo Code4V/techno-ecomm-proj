@@ -69,7 +69,7 @@
     
     <title>Sign Up</title>
     <link rel="icon" href="images/alien.png">
-    <link rel="stylesheet" href="usersSignUp.css" />
+    <link rel="stylesheet" href="usersSignUp.css?v=<?php echo time(); ?>" />
 </head>
 <body>
     <div class="container">
@@ -109,7 +109,7 @@
                 <div class="button">
                     <input type="submit" value="Sign Up" name="submit">
                 </div>
-                <a href="login.php"><h4>Login</h4></a>
+                <a href="usersLogin.php"><h4>Login</h4></a>
             </form>
             
         </div>

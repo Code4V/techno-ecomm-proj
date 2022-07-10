@@ -7,6 +7,11 @@
     2.2 SIDE NAV LISTS
     2.3 NAV SEPERATOR 
 3 MAIN POSTS 
+    3.1 MAIN POSTS CONTENT
+        3.1.1 MAIN POSTS CONTENT HEADER
+        3.1.2 MAIN POSTS CONTENT CONTENT
+        3.1.3 MAIN POSTS CONTENT FOOTER
+        3.1.4 MAIN POSTS CONTENT HIGHLIGHT
 4 FOOTER 
 
 */
@@ -22,30 +27,37 @@
 }
 
 body, head{
-    background-color: rgba(236, 252, 9, 0.158);
+    
 }
 
 body{ 
     margin: 0;
+    
 }
 
 /* 1 MAINBODY */
 
 .mainbody-container{
     /* min-height: 100vh; */
+    background-image: url("images/Bees.jpg");
+    
 }
 
 .mainbody{
     display: grid;
     grid-template-columns: minmax(165px, 15%) 1fr;
     min-height: 100vh;
+    backdrop-filter: url(filters.svg#filters) blur(5px) grayscale(80%) contrast(30%);
+    /* backdrop-filter:  ; */
+    /* background-color: rgba(134, 138, 80, 0.514); */
+
+    align-content: center;
 }
 
 /* 2 SIDE NAVIGATION */
 
 .side-nav{
     background-color: black;
-
     position: relative;
 }
 
@@ -87,24 +99,26 @@ body{
     color: white;
     font-size: 1.25em;
 
-    margin-left: 10px;
+
 
     top: 0;
     bottom: 0;
 }
 
 .list-style:hover, a:hover{
+    transform: translateX(5px);
     color: yellow;
     filter: brightness(100%) sepia(100) saturate(20) hue-rotate(365deg);
-    transition: 1.5s ease;
+    
 }
 
 .list-style{
     text-align: justify;
-    
+    transition: 0.5s ease;
 }
 
 .side-nav-lists a:hover {
+    
     color: yellow;
     text-decoration: none;
 }
@@ -114,8 +128,13 @@ body{
     max-width: 20px;
     max-height: 20px;
 
-    margin: 0px 0px 10px 22.5px;
+    margin: 0px 10px 7.5px 15px;
     text-align: center;
+}
+
+.active{
+    text-decoration: underline;
+    
 }
 
 /* 2.3 NAV SEPERATOR */
@@ -132,20 +151,354 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 
-    text-align: center;
+    
+    justify-content: center;
 }
 
 /* 3 MAIN POSTS */
 
 .main-posts{
+    min-height: 100vh;
+}
+
+.main-listing-posts{
+    align-items: top;
     
+    /* padding: 5px 0px 0px 0px; */
 }
 
 .posts-container{
+    background-color: black;
+    position: relative;
+
+    min-height: 15vh;
+    max-width: 400.25px;
+
+    margin: 0px 0px 0px 0px;
+    padding: 2.5px;
     
+    
+    
+    color: white;
+
+    flex-direction: column;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: black;
+    
+    transition: 0.25s ease-in;
+
+    transform: scale(.85);
+
+    box-sizing: border-box;
 }
 
-/* 4 FOOTER */
+.posts-container:hover{
+    transform: scale(.90);
+
+    border-color: yellow;
+
+}
+
+.flex-item{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    align-content: stretch;
+    box-sizing: border-box; 
+}
+
+.main-title-container{
+    margin: 0px 0px 0px 20px;
+
+    text-shadow: 2px 2px rgba(255, 230, 0, 0.479);
+    color: black;
+}
+
+/* 3.1 MAIN POSTS CONTENT */
+
+/* 3.1.1 MAIN POSTS CONTENT HEADER  */
+
+.worker-pfp{
+    max-width: 40px;
+    max-height: 40px;
+
+    margin: 5px 0px 0px 5px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-color: rgb(255, 251, 0);
+
+    border-radius: 25px;    
+}
+
+.posts-header{
+    position: relative;
+
+    
+    min-height: max-content;
+}
+
+.posts-header p{
+    padding: 0;
+    margin: 10px 0 0 5px;
+}
+
+.posts-header p::after{
+    display: block;
+
+    
+    content: "Date and Time";
+    font-size: 10px;
+    margin: 0px 0px 5px 0px;
+
+}
+
+.content-bgbee{
+
+    /* background-image: url('images/781454.png');
+    background-repeat: no-repeat; */
+
+    height: 45px;
+    width: 45px;
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+    top: 0;
+
+    overflow: hidden;
+    display: inline-block;
+}
+
+.content-bgbee:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+}
+  
+  /* Hover state - trigger effect */
+.content-bgbee:hover:after {
+    opacity: 1;
+    left: 130%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+  
+  /* Active state */
+.content-bgbee:active:after {
+    opacity: 0;
+}
+  
+
+/* 3.1.2 MAIN POSTS CONTENT CONTENT  */
+
+.posts-content{
+    
+    
+    
+    /* min-width: inherit; */
+    min-height: max-content;
+    min-width: 50%;
+
+
+    word-wrap: break-word;
+    padding: 5px 0px 0px 0px;
+}
+
+.posts-content p{
+    z-index: 101;
+}
+
+/* 3.1.3 MAIN POSTS CONTENT FOOTER  */
+
+.posts-footer{
+    position: relative;
+    min-height:  min-content;
+}
+
+.posts-footer p{
+    font-size: 1.5em;
+
+    color: yellow;
+}
+
+.posts-footer button{ 
+    position: absolute;
+    align-content: right;
+
+    background-color: yellow;
+
+    color: black;
+    
+    max-height: 2rem;
+    min-width: 1.5rem;
+
+    margin: 0px 5px 0px 0px;
+
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.button{
+    border-radius: 10px;
+    transition: .25s ease-in-out;
+}
+
+.button:hover {
+    border-color: yellow;
+    border: 2.5px solid;
+    background-color: black;
+
+    color: yellow;
+    transform: scale(1.0275);
+}
+
+.button:focus{
+    outline: none;
+    box-shadow: none;
+}
+/* 3.1.4 MAIN POSTS CONTENT HIGHLIGHT  */
+
+.posts-highlight{
+    display: block;
+    
+    /* position: absolute; */
+
+    /* top: 0;
+    right: 0;
+    bottom: 0; */
+}
+
+.posts-highlight img{
+    z-index: 0;
+    flex-wrap: wrap;
+
+    min-height: min-content;
+    max-width: 100%;
+
+    padding: 5px 0px 0px 0px;
+
+    /* border-radius: 0px 5px 5px 0px; */
+    border-radius: 10px;
+    
+    /* transform: translateX(-30px); */
+
+    transition: .25s ease;
+}
+
+.posts-highlight img:hover{
+    transform: scale(.95);
+}
+
+/* 4 OVERLAY CREATE POST */
+
+.overlay-form {
+    position:absolute;
+    top:50vh;
+    left:0px;
+    min-width:100px;
+    height:0vh;
+    background:rgba(0,0,0,0.8);
+    z-index:-1;
+    opacity:0;
+    padding:80px 100px;
+    overflow:hidden;
+    box-sizing:border-box;
+    transition: top 500ms ease-in-out,
+                opacity 500ms ease-in-out,
+                height 0ms ease-in-out 500ms;  
+  }
+  .overlay-form .close-btn {
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:#fff;
+    font-size:40px;
+    font-weight:600;
+    cursor:pointer;
+  }
+  .overlay-form h1 {
+    font-size:32px;
+    color:#fff;
+  }
+  .overlay-form p {
+    font-size:16px;
+    color:#eee;
+    margin:-15px 0px 30px;
+  }
+  .overlay-form .form-element {
+    margin:20px 0px;
+  }
+  .overlay-form label {
+    display:block;
+    font-size:17px;
+    color:#eee;
+    margin-bottom:5px;
+  }
+  .overlay-form input, textarea{
+    width:100%;
+    padding:6px;
+    font-size:17px;
+    border:2px solid #eee;
+    background:transparent;
+    outline:none;
+    border-radius:10px;
+    color: white;
+  }
+
+  .overlay-form input:focus, textarea:focus{
+    border:2px solid yellow;
+  }
+
+  .overlay-form button,
+  .center button {
+    margin-top:10px;
+    width:100px;
+    height:35px;
+    font-size:15px;
+    text-transform:uppercase;
+    background:#fff;
+    color:#222;
+    border:none;
+    outline:none;
+    border-radius:10px;
+  }
+
+  body.activeForm .overlay-form {
+    z-index:2;
+    opacity:1;
+    top:0px;
+    height:100vh;
+    transition: top 500ms ease-in-out,
+                opacity 500ms ease-in-out,
+                height 0ms ease-in-out 0ms;
+  }  
+
+.elem-desc{
+    min-height: 350px;
+    text-align: justify;
+}
+
+/* 5 FOOTER */
 
 .footer-container {
     position: relative;

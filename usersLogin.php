@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
 <html lang="en">
 <head>
     <link rel="icon" href="images/alien.png">
-    <link rel="stylesheet" href="usersLogin.css">
+    <link rel="stylesheet" href="usersLogin.css?v=<?php echo time(); ?>">
     <title>Login</title>
 </head>
 <body>

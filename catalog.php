@@ -5,13 +5,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BuzzWork: Posts</title>
+    <link rel="icon" href="images/bee.png">
 
     <link rel="stylesheet" href="catalog.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     
 </head>
 <body>
@@ -19,8 +22,6 @@
 <div class="main">
 
     <!-- HEADER SECTION -->
-    
-    
 
     <!-- MAIN BODY SECTION -->
     <div class="mainbody-container">
@@ -35,37 +36,131 @@
 
                 <div class="side-nav-lists">
                     
-                    <div class="list-style nav-home">
-                        <img src="images/home-3-512.png"><a href="#">Home</a></img> 
+                    <div class="list-style nav-home ">
+                        <a href="main.php" target="_blank"><img src="images/home-3-512.png" >Home</a></img> 
+                    </div>
+                    <div class="list-style nav-account active">
+                        <a href="#"><img src="images/beeswax-2-512.png">Posts</a></img> 
                     </div>
                     <div class="list-style nav-creators">
-                        <img src="images/user-4-512.png"><a href="#">Creators</a></img> 
+                        <a href="myAccount.php"><img src="images/user-4-512.png">My Account</a></img> 
                     </div>
                     <div class="list-style nav-create-post">
-                        <img src="images/beeswax-2-512.png"><a href="#">Create Post</a></img> 
-                    </div>
-                    <div class="list-style nav-account">
-                        <img src="images/home-3-512.png"><a href="#">Account</a></img> 
+                        <a href="#" onclick="toggleForm()"><img src="images/postIcon.jpg">Create Post</a></img> 
                     </div>
                 </div>       
             <!-- MAIN LISTING  -->
             </div>
             <div class="main-posts">
-                <div class="main-listing-posts">
-                    <div class="posts-container">
-                        testing
+                <div class="main-title-container">
+                    <div>
+                        <h1>POSTS</h1>
+                    </div>
+                </div>
+                <div class="flex-item main-listing-posts">
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/Prof1.png" alt="worker-picture" class="worker-pfp">
+                            <p>Andy Medina</p>
+                            <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>I will pilot your league of legends account! Price varies depending on how many levels
+                                I should do. I also offer piloting your DOTA 2 account and Mobile Legends account
+                            </p>
+                            
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>₱500 - ₱1000</p>
+                            <button class="button contact-button">Order Service</button>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/Prev3.jpg" class="highlight-pic">
+                        </div>
+                    </div>
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/Prof2.jpg" alt="worker-picture" class="worker-pfp">
+                            <p>Ervin Bautista</p>
+                            <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>I will edit your video with the utmost quality and flavor. You can add your touch in the video that will be edited
+                                Contact me now to make your ideas to reality! 
+                            </p>
+                            
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>₱750 - ₱1500</p>
+                            <button class="button contact-button">Order Service</button>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/Prev1.jpg" class="highlight-pic">
+                            <img src="images/Prev2.jpg" class="highlight-pic">
+                        </div>
+                    </div>
+                    <div class="flex-item posts-container">
+                        <div class="flex-item posts-header">
+                            <img src="images/Prof2.jpg" alt="worker-picture" class="worker-pfp">
+                            <p>Ervin Bautista</p>
+                            <div class="content-bgbee"><img src="images/781454.png" class="content-bgbee"></div>
+                        </div>
+                        <div class="flex-item posts-content">
+                            <p>I’ll provide you with the best video editing solution and turn your raw footage into an engaging video that will tell your story. I can do video editing for YouTube, FB, IG, or whatever you want. You Name It, I Do It!
+                            </p>
+                            
+                        </div>
+                        <div class="flex-item posts-footer">
+                            <p>₱750 - ₱1500</p>
+                            <button class="button contact-button">Order Service</button>
+                        </div>
+                        <div class="flex-item posts-highlight">
+                            <img src="images/Prev4.jpg" class="highlight-pic">
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <div class="footer-container">
+<!-- CREATE POST OVERLAY -->
+    <script>
+        function toggleForm(){
+        document.body.classList.toggle('activeForm');
+        }
+
+    </script>
+    <div class="overlay-form">
+        <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <h1>Create a Post! 🐝</h1>
+            <p>Start making money now and share your talents!</p>
+        <div class="form-element">
+            <label for="fullname">Category</label>
+            <input type="text" id="fullname">
+        </div>
+        <div class="form-element">
+            <label for="email">Description</label>
+            <textarea class="elem-desc" type="email" id="email"></textarea>
+        </div>
+        <div class="form-element">
+            <label for="minprice">Min Price</label>
+            <input type="price" id="minprice">
+        </div>
+        <div class="form-element">
+            <label for="maxprice">Max Price</label>
+            <input type="price" id="maxprice">
+        </div>
+        <div class="form-element">
+            <a href="catalogUP.php"><button>POST!</button></a>
+        </div>
+        </div>
+
+
+    <!-- <div class="footer-container">
         <div class="footer-content-conatiner">
 
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>

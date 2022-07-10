@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
     
     else{
         
-        header('location:main.php');
+        header('location:catalog.php');
         
     }
     
@@ -72,7 +72,7 @@ if(isset($_POST['submit'])){
                     </div>
                     <br>
                     <div class="button">
-                        <input type="submit" value="Log In" name="submit">
+                            <input type="submit" value="Log In" name="submit" class="button1">
                     </div>
 
                 </div>

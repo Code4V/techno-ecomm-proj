@@ -45,8 +45,14 @@ form .userDetails .inputBox {
   font-size: larger;
   font-weight: bolder;
 }
+
+span {
+  font-weight: bold;
+  padding-top: 20px;
+}
 input {
   padding-left: 10px;
+  font-size: 17px;
   height: 40px;
   width: 400px;
 }

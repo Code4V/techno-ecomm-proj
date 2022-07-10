@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #fef9f6;
 }
@@ -61,16 +66,21 @@ span {
   background-image: url("images/working.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  min-height: 100vh;
 }
 
 .abtBuzzWork p {
   color: #fff;
   font-size: 20px;
-  margin: 20px !important;
-  padding-top: 300px;
+  margin: 320px 20px 220px 20px !important;
+  /* padding-top: 300px; */
   text-align: center !important;
   align-items: justify !important;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
+
+  text-shadow: 1px 2px black;
+  font-size: xx-large;
 }
 
 /* Cards */
@@ -171,4 +181,15 @@ input[type="checkbox"]:checked ~ .check:before {
 
 input[type="checkbox"]:checked ~ .check:after {
   transform: translateX(0%);
+}
+
+.abtBuzzWork h1{
+  text-shadow: 1px 1px black;
+}
+
+.abtBuzzWork p{
+  color: white;
+  /* background-color: white; */
+
+  z-index: 2;
 }

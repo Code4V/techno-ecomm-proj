@@ -22,12 +22,14 @@
     </div>
     <div class="abtBuzzWork">
       
+      
       <h1 id="title">About BuzzWork</h1>
       <p id="descript">Our company BuzzWork is a one stop service website<br>
        that mainly offers services relating to Multimedia. 
        Offering quality services that each customer needs. <br>
        Ensuring that all partners within our service business provide top level service.<br> BuzzWork is created for the needs of trusted student freelancers on the internet. <br>Together we can create a platform to help these bright students profit from their passion.</p>
     </div>
+
     <div class="title">
       <h1 id="title">Developers Info</h1>
     </div>
